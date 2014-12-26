@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff" >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/btn_selector"
+            android:gravity="center"
+            android:text="back"
+            android:textColor="#000000"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/quit"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/btn_selector"
+            android:gravity="center"
+            android:text="quit"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_selector"
+            android:gravity="center"
+            android:text="OK"
+            android:textColor="#000000" 
+              android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/line_divider" />
+
+    <ListView
+        android:id="@+id/imagepick_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:cacheColorHint="#ffffffff"
+        android:divider="#EEE3D9"
+        android:dividerHeight="1px" />
+
+    <GridView
+        android:id="@+id/imagepick_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:clipChildren="true"
+        android:drawSelectorOnTop="true"
+        android:gravity="center"
+        android:horizontalSpacing="3dip"
+        android:listSelector="@drawable/listitem_selector"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="3dip"
+        android:visibility="gone" >
+    </GridView>
+
+</LinearLayout>
