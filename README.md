@@ -2,8 +2,8 @@ maple_plugin
 ============
 A image selector plugin
 ------------
-especially it is display on the windows view, and will be display above all the view.
-if you want to use it, just to make the code like MainActivity.
+It is display on the windows view, especially it will be display above all the views.
+If you want to use it, just write the code like MainActivity.
 
 
 /**
