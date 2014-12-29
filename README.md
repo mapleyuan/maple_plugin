@@ -10,12 +10,17 @@ If you want to use it, just write the code like MainActivity.
  * @author yuanweinan
  * 
  */
+
+
 public class MainActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		
 		super.onCreate(savedInstanceState);
+		
 		setContentView(R.layout.main);
+		
 		View view = findViewById(R.id.main_button);
 
 		final ImageView image = (ImageView) findViewById(R.id.main_image);
