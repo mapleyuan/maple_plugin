@@ -49,3 +49,15 @@ public class MainActivity extends Activity {
 		});
 	}
 }
+
+Developed By
+-------------
+
+    mapleyuan - yuanweinan00@gmail.com
+
+License
+-------------
+
+Copyright (C) 2014 maple yuan <yuanweinan00@gmail.com>
+
+
