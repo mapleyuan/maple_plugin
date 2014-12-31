@@ -25,8 +25,10 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.maple.imageselector.pojo.FolderUnit;
+import com.maple.util.ToastCustom;
 
 /**
  * 图片选择器（悬浮窗）
@@ -85,6 +87,7 @@ public class ImagePickCustom {
 							mCurGridViewAdapter.setItemIsSelected(mSelectedPos, false);
 							mSelectedPos = arg2;
 							mCurGridViewAdapter.setItemIsSelected(mSelectedPos, true);
+							ToastCustom.makeText(mContext, "selected:"+arg2, Toast.LENGTH_LONG).show();
 						}
 					});
 				}
